@@ -78,7 +78,7 @@ jupyter lab
 
 ## The dataset
 
-`data/2d_magnets.csv` contains two-dimensional and layered magnetic materials — the family that includes CrI₃, Cr₂Ge₂Te₆, Fe₃GeTe₂, MnBi₂Te₄, and the transition-metal phosphorus trisulfides such as NiPS₃.
+`data/magneticmoment_Ef_data.csv` contains two-dimensional magnetic materials data — the family of materials is derived from Cr₂Ge₂Te₆.
 
 Typical columns:
 
@@ -86,13 +86,11 @@ Typical columns:
 |---|---|---|
 | `formula` | Chemical formula of the monolayer | — |
 | `magnetic_moment` | Magnetic moment per magnetic atom | μ_B |
-| `magnetic_order` | Ferromagnetic, antiferromagnetic, non-magnetic | — |
-| `anisotropy_energy` | Magnetic anisotropy energy | meV/atom |
-| `exfoliation_energy` | Energy to exfoliate from the bulk parent | meV/Å² |
-| `formation_energy` | Formation energy per atom | eV/atom |
-| `band_gap` | Electronic band gap | eV |
+| `magnetic_order` | Ferromagnetic, antiferromagnetic | — |
+| `formation_energy` | Formation energy per unit cell | eV/unit cell |
 
-**Fill in `data/README.md` with the real provenance before publishing.** Record the source (e.g. C2DB, Materials Cloud 2D, 2DMatPedia, or your own calculations), the version and download date, the level of theory, and the license under which you are permitted to redistribute it. Several 2D materials databases have redistribution terms; check before committing the CSV.
+
+
 
 ### Two warnings about this data
 
@@ -106,12 +104,13 @@ Typical columns:
 
 | Time | Block |
 |---|---|
-| 0:00–0:10 | Setup, open the notebook, run the first cell |
-| 0:10–0:45 | Part 1 — Python |
-| 0:45–1:40 | Part 2a — framing, features, first model |
-| 1:40–1:50 | Break |
-| 1:50–2:40 | Part 2b — evaluation, and why the number is optimistic |
-| 2:40–3:00 | Wrap-up, limitations, where to go next |
+| 0:00–0:30 | Lecture: Materials Informatics |
+| 0:30–0:40 | Setup, open the notebook, run the first cell |
+| 0:40–1:15 | Part 1 — Python |
+| 1:15–2:00 | Part 2a — framing, features, first model |
+| 2:00–2:10 | Break |
+| 2:10–2:55 | Part 2b — evaluation, and why the number is optimistic |
+| 2:55–3:00 | Wrap-up, limitations, where to go next |
 
 ---
 
@@ -119,13 +118,12 @@ Typical columns:
 
 **A cell's output didn't change after I edited it.** Re-run it — Shift+Enter. Editing alone does nothing.
 
-**`KeyError: 'Band_gap'`.** Column names are case- and spelling-sensitive. Run `df.columns` to see the real names.
+**`KeyError: 'Formation_energy'`.** Column names are case- and spelling-sensitive. Run `df.columns` to see the real names.
 
 **`NameError: name 'df' is not defined`.** You skipped a cell, or restarted the kernel. Run everything from the top: *Runtime → Run all* in Colab.
 
 **`ModuleNotFoundError` in Colab.** Re-run the first cell; Colab resets its environment after a period of inactivity.
 
-**Featurisation is slow or fails to install.** Use `data/2d_magnets_features.csv`, which has the descriptors already computed. The notebook shows how to switch.
 
 ---
 
@@ -135,7 +133,7 @@ Typical columns:
 - **matminer** — featurisers, dataset loaders, and a large set of worked examples.
 - **pymatgen** — structure manipulation and materials analysis.
 - **C2DB / Materials Cloud 2D / 2DMatPedia** — computational databases of 2D materials, including magnetic ones.
-- **"Best practices in machine learning for chemistry"** and similar methods commentaries — read one before you publish a model.
+- **"APS GDS Tutorials"** for more information.
 
 ---
 
