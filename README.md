@@ -11,7 +11,7 @@ A hands-on introduction to Python and materials informatics, built around a data
 
 A short tutorial in two parts, designed to be worked through in a single session:
 
-**Part 1 — Introduction to Python.** Enough to be dangerous: notebooks, variables, lists and dictionaries, loading a spreadsheet with pandas, filtering rows, and making a plot. Some exercises use the 2D magnets data.
+**Part 1 — Introduction to Python.** Enough to be dangerous: notebooks, variables, lists and numpy arrays, loading a spreadsheet with pandas, filtering rows, and making a plot. Some exercises use the 2D magnets data.
 
 **Part 2 — Introduction to materials informatics.** Turning chemical formulas into numbers a model can use, training a model to predict a magnetic property, evaluating it honestly, and recognising the need to carefully analyze materials datasets.
 
@@ -95,9 +95,9 @@ Typical columns:
 
 ### Two warnings about this data
 
-**The labels are calculated, not measured.** These properties come from DFT. Predicted Curie temperatures and anisotropies for 2D magnets are notoriously sensitive to the functional and the treatment of correlation, and experimental confirmation exists for only a handful of these materials. A model trained here predicts *what DFT would say*, which is not the same thing as what a sample would do.
+**The labels are calculated, not measured.** These properties come from DFT. Predicted Curie temperatures and anisotropies for 2D magnets are notoriously sensitive to the functional and the treatment of correlation, and experimental confirmation exists for only a handful of these materials. A model trained here predicts *what DFT would say*, which is not the same thing as what a material would do in the lab (or fab).
 
-**"MAE" is ambiguous in this field.** It means *magnetic anisotropy energy* to a magnetism researcher and *mean absolute error* to a machine learning practitioner, and both appear in this tutorial. The notebooks spell both out in full. Watch for it in the literature.
+**"MAE" is ambiguous in this field.** It means *magnetic anisotropy energy* to a magnetism researcher and *mean absolute error* to a machine learning practitioner, and both appear in this field of study. The notebook shown here refers to the mean absolute error. Watch for this in the literature.
 
 ---
 
@@ -149,7 +149,7 @@ If this tutorial contributed to work you publish, please cite it as:
 ```bibtex
 @misc{REPO,
   author = {Trevor David Rhone},
-  title  = {NSF UPWARDS Summer School, Materials Informatics Tutorial: 2D Magnets},
+  title  = {NSF UPWARDS Summer School, Materials Informatics Tutorial: Materials design and discovery},
   year   = {2026},
   url    = {https://github.com/quantum-intelligence/semiconductor-manufacturing-analytics}
 }
