@@ -65,11 +65,12 @@ jupyter lab
 ```
 .
 ├── data/
-│   ├── magneticmoment_Ef_data.csv           # the tutorial dataset
+│   ├── gmagneticmoment_Ef_data.csv           # the tutorial dataset
 │   └── README.md                # provenance, columns, units, license
 ├── notebooks/
 │   └── materials_informatics.ipynb
 ├── slides/
+│   └── Rhone Upwards Tutorial Round 1.ppt
 ├── requirements.txt
 └── README.md
 ```
@@ -100,16 +101,16 @@ Typical columns:
 
 ---
 
-## Suggested schedule (3 hours)
+## Tentative schedule (3 hours)
 
 | Time | Block |
 |---|---|
 | 0:00–0:30 | Lecture: Materials Informatics |
 | 0:30–0:40 | Setup, open the notebook, run the first cell |
 | 0:40–1:15 | Part 1 — Python |
-| 1:15–2:00 | Part 2a — framing, features, first model |
+| 1:15–2:00 | Part 2a — framing, descriptors, first model |
 | 2:00–2:10 | Break |
-| 2:10–2:55 | Part 2b — evaluation, and why the number is optimistic |
+| 2:10–2:55 | Part 2b — evaluation, and why the model performance score is optimistic |
 | 2:55–3:00 | Wrap-up, limitations, where to go next |
 
 ---
@@ -147,10 +148,10 @@ If this tutorial contributed to work you publish, please cite it as:
 
 ```bibtex
 @misc{REPO,
-  author = {AUTHOR NAME},
-  title  = {Materials Informatics Tutorial: 2D Magnets},
+  author = {Trevor David Rhone},
+  title  = {NSF UPWARDS Summer School, Materials Informatics Tutorial: 2D Magnets},
   year   = {2026},
-  url    = {https://github.com/ORG/REPO}
+  url    = {https://github.com/quantum-intelligence/semiconductor-manufacturing-analytics}
 }
 ```
 
@@ -164,4 +165,5 @@ The dataset is redistributed under its original license — see `data/README.md`
 
 ## Acknowledgements
 
-ADD FUNDING, HOST INSTITUTION, DATASET AUTHORS, AND ANYONE WHO TESTED THE NOTEBOOKS.
+Thanks to the National Science Foundation UPWARDS for the Future Network for supporting the broader research environment.
+
